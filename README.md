@@ -1,14 +1,14 @@
-# 🏥 Cabinet Médical - Système de Réservation de Rendez-vous
+# Cabinet Médical - Système de Réservation de Rendez-vous
 
 Application de gestion de rendez-vous pour cabinet médical, développée avec **Spring Boot** (backend) et **Angular** (frontend).
 
-## 📋 Fonctionnalités (MVP)
+## Fonctionnalités (MVP)
 
 - ✅ **Consulter les médecins** : Liste des médecins avec leurs spécialités
 - ✅ **Voir les créneaux** : Affichage des créneaux disponibles par médecin
 - ✅ **Réserver un créneau** : Formulaire de réservation avec validation
 
-## 🛠️ Technologies
+## Technologies
 
 ### Backend
 - **Java 21**
@@ -22,7 +22,7 @@ Application de gestion de rendez-vous pour cabinet médical, développée avec *
 - **TypeScript**
 - **CSS pur** (design system personnalisé)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 project/
@@ -45,7 +45,7 @@ project/
 └── README.md
 ```
 
-## 🚀 Instructions de lancement
+## Instructions de lancement
 
 ### Prérequis
 - Java 21
@@ -71,7 +71,7 @@ npm start
 
 L'application est accessible sur `http://localhost:4200`
 
-## 📡 API REST
+## API REST
 
 | Méthode | Endpoint | Description |
 |---------|----------|-------------|
@@ -92,7 +92,7 @@ curl -X POST http://localhost:8080/api/appointments \
   }'
 ```
 
-## 🎯 Décisions techniques
+## Décisions techniques
 
 ### Modèle de données
 
@@ -111,14 +111,14 @@ L'**optimistic locking** (`@Version`) sur `TimeSlot` empêche les doubles réser
 2. **Validation** : Email valide, nom obligatoire
 3. **Créneaux futurs uniquement** : Impossible de réserver dans le passé
 
-## 📂 Données de test
+## Données de test
 
 L'application démarre avec :
 - 5 spécialités (Médecine Générale, Cardiologie, Dermatologie, Pédiatrie, Ophtalmologie)
 - 6 médecins
 - Créneaux pour les 5 prochains jours (9h-12h et 14h-18h)
 
-## 🧪 Tests
+## Tests
 
 ### API Backend
 ```bash
